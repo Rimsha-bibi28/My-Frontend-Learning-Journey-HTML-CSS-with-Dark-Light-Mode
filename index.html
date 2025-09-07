@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>My Frontend Learning Journey</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>🌐 My Frontend Learning Journey 🚀</h1>
+      <p class="highlight">HTML + CSS Progress Showcase</p>
+      <button id="theme-toggle">🌙 Dark Mode</button>
+    </header>
+
+    <section id="about">
+      <h2>About This Page</h2>
+      <p style="color: #e94560; font-size: 18px">
+        This section is styled using Inline CSS to highlight what I’ve learned
+        🎨
+      </p>
+      <p>
+        In my recent session, I explored different types of CSS: Inline,
+        Internal, and External, along with the difference between Block and
+        Inline elements.
+      </p>
+    </section>
+
+    <section class="examples">
+      <h2>Examples</h2>
+      <div class="box">This box is styled with External CSS 📦</div>
+      <h3>Block Element:</h3>
+      <div class="block-demo">I am a block element</div>
+      <h3>Inline Elements:</h3>
+      <span class="inline-demo">I am inline 🌿</span>
+      <span class="inline-demo">Me too 💜</span>
+    </section>
+
+    <footer>
+      <p>© 2025 My Frontend Journey | Designed with ❤️ using HTML & CSS</p>
+    </footer>
+
+    <script>
+      const toggleBtn = document.getElementById("theme-toggle");
+      const body = document.body;
+
+      toggleBtn.addEventListener("click", () => {
+        body.classList.toggle("dark-mode");
+        if (body.classList.contains("dark-mode")) {
+          toggleBtn.textContent = "☀️ Light Mode";
+        } else {
+          toggleBtn.textContent = "🌙 Dark Mode";
+        }
+      });
+    </script>
+  </body>
+</html>
